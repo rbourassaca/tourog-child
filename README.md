@@ -1,2 +1,2 @@
-# rbourassa.ca_themes_tourog-child
-
+# tourog-child
+This is the tourog-child theme for rbourassa.ca.
