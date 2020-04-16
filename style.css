@@ -1404,6 +1404,10 @@ footer.footer {
   div.blog-post h3.post-title{
     font-size: 6vw !important;
   }
+  /* On ajoute une marge dans le container */
+  .container{
+    margin: 0 20px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
