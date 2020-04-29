@@ -90,6 +90,8 @@
       <?php if(isset($tourog_redux_demo['header_instagram']) && $tourog_redux_demo['header_instagram'] != ''){?>
       <li><a href="<?php echo esc_url($tourog_redux_demo['header_instagram']); ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
       <?php } ?>
+      <!-- CUSTOM LINKS -->
+      <li><a href="https://github.com/rbourassaca" target="_blank"><i class="fab fa-github"></i></a></li>
     </ul>
   </div>
 </div>
