@@ -1285,15 +1285,23 @@ section.blog {
 
 /* --- */
 
-/* On donne une hauteur aux images de la gallerie */
-.customGalleryItem {
-  height: 250px;
-}
 
 /* On ajoute un espacement au dessus de la section contact et la gallerie */
 .icon-content-block,
 .customGallery {
   padding-top: 40px;
+}
+
+.customGallery a{
+  display: block;
+  border-bottom: 0px !important;
+  text-align: center;
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.customGallery a img{
+  width: 100%;
 }
 
 .embed-container {
