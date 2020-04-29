@@ -9,6 +9,13 @@
         ?>
     <link rel="shortcut icon" href="<?php if(isset($tourog_redux_demo['favicon']['url'])){?><?php echo esc_url($tourog_redux_demo['favicon']['url']); ?><?php }?>">
     <?php }?>
+
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/ressources/magnific-popup/magnific-popup.css' ?>">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri() . '/ressources/magnific-popup/magnific-popup.js' ?>"></script>
+    <!-- /// -->
+
     <?php wp_head(); ?>
 </head>
 
