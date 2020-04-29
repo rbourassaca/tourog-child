@@ -1,7 +1,7 @@
 <?php
 $gallerie_photos_largeur = 4;
+require_once(__DIR__."/../components/photos_gallery.php");
 ?>
-
 
 <section class="text-content-block">
     <div class="container">
@@ -43,13 +43,8 @@ if(get_field('description') || get_field('photos')){
             <div class="row customGallery">
                 <?php
                 $field = 'photos';
-                $HTML = '';
                 if(get_field($field)){
-                    $field = get_field($field);
-                    foreach($field as $photo){
-                        $HTML .= '<div class="col-lg-'.(12/$gallerie_photos_largeur).' customGalleryItem" style="background-image: url('.$photo["sizes"]["medium_large"].'); background-size: cover;"></div>';
-                    }
-                    echo $HTML;
+                   photosGallery(get_field($field), $gallerie_photos_largeur);
                 }
                 ?>
             </div>
@@ -57,5 +52,4 @@ if(get_field('description') || get_field('photos')){
         </div>
     </section>
 <?php } ?>
-
 <?php require_once(__DIR__.'/../components/contact.php'); ?>

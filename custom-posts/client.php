@@ -5,6 +5,8 @@ $default_thumb = '/wp-content/uploads/2020/01/Logo.png';
 $page_taxonomie = 'categories_clients';
 $postID = get_the_ID();
 
+require_once(__DIR__."/../components/photos_gallery.php");
+
 function getExcerpt($str, $startPos=0, $maxLength=200) {
 	if(strlen($str) > $maxLength) {
 		$excerpt   = substr($str, $startPos, $maxLength-3);
@@ -104,13 +106,8 @@ if(get_field('description', $postID) || get_field('photos', $postID)){
             <div class="row customGallery">
                 <?php
                 $field = 'photos';
-                $HTML = '';
                 if(get_field($field, $postID)){
-                    $field = get_field($field);
-                    foreach($field as $photo){
-                        $HTML .= '<div class="col-lg-'.(12/$gallerie_photos_largeur).' customGalleryItem" style="background-image: url('.$photo["sizes"]["medium_large"].'); background-size: cover;"></div>';
-                    }
-                    echo $HTML;
+                    photosGallery(get_field($field), $gallerie_photos_largeur);
                 }
                 ?>
             </div>
