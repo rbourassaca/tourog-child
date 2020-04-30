@@ -3,9 +3,11 @@
 function photosGallery($photos, $width){
     $HTML = '';
     foreach($photos as $photo){
-        $HTML .= '<a class="col-lg-'.(12/$width).'" href="'.$photo["url"].'">';
+        $HTML .= '<div class="col-lg-'.(12/$width).'">';
+        $HTML .= '<a href="'.$photo["url"].'">';
         $HTML .= '<img src="'.$photo["sizes"]["medium"].'" alt="'.$photo["alt"].'">';
         $HTML .= '</a>';
+        $HTML .= '</div>';
     }
     echo $HTML;
 }
