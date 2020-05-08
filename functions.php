@@ -3,7 +3,7 @@ add_action( 'wp_enqueue_scripts', 'childtheme_parent_styles');
 add_action( 'after_setup_theme', 'tourog_child_theme_setup' );
 add_action( 'widgets_init', 'wpb_widgets_init' );
 //add_action( 'show_admin_bar', 'hide_admin_bar' );
-//add_action( 'init', 'remove_post_type');
+add_action( 'init', 'remove_post_type');
 add_filter( 'get_the_archive_title', 'archive_title' );
 //include_once('settings/settings.php');
 
