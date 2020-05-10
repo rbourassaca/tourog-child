@@ -1,29 +1,13 @@
 <?php
 
-function photosGallery($photos, $width){
+function photosGallery($photos, $width = 4){
     $HTML = '';
     foreach($photos as $photo){
         $HTML .= '<div class="col-lg-'.(12/$width).'">';
-        $HTML .= '<a href="'.$photo["url"].'">';
-        $HTML .= '<img src="'.$photo["sizes"]["medium"].'" alt="'.$photo["alt"].'">';
-        $HTML .= '</a>';
+        $HTML .= do_shortcode( '[ts_image fancybox="yes" image="'.$photo['id'].'"]' );
         $HTML .= '</div>';
     }
     echo $HTML;
 }
 
 ?>
-
-<script>
-    // Init images
-    $(document).ready(function() {
-        $('.customGallery').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            closeOnContentClick: true,
-            gallery:{
-                enabled:true
-            }
-        });
-    });
-</script>

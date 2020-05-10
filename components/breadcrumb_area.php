@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container light">
     <?php if ( is_active_sidebar( 'breadcrumb_area' ) ) : ?>
         <div class="row">
             <div class="col-xl-12">

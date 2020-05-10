@@ -1,0 +1,248 @@
+/*
+Theme Name: tourog Child Theme
+Theme URI: https://github.com/rbourassaca/tourog-child
+Description: 
+Author: rbourassa
+Author URI: http://rbourassa.ca
+Template: tourog
+Version: 2.0.0
+Text Domain:  tourog-child
+*/
+
+// Espacements
+$padding_container: 100px;
+$padding_elements: 50px;
+
+
+// Opacité
+$header_video_opacity: 0.3;
+
+// Couleurs
+$header_video_bg_color: black;
+$light_text_color: white;
+$light_link_color: white;
+
+// Effets
+$blur_menu: 100px;
+
+// Grosseur
+$header_left_side_width: 120px;
+$header_left_logo_width: 35px;
+
+// Grosseur des textes
+$size_header_title: 85px;
+$size_header_subtitle: 25px;
+$grosseur_h1: 40px;
+$grosseur_h2: 35px;
+$grosseur_h3: 30px;
+$grosseur_h4: 30px;
+$grosseur_h5: 30px;
+$grosseur_h6: 30px;
+$grosseur_texte: 18px;
+
+
+// Breakpoint
+$breakpoint-xs: 0px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+body{
+    cursor: none;
+    a:link, a:visited, a:hover, a:active, input, textarea{
+        cursor: none !important;
+    }
+    
+    div.cursor, div.js-cursor{
+        z-index: 1000;
+    }
+
+    overflow-x: hidden !important;
+
+
+    header.page-header{
+        h1.header-title{
+            font-size: $size_header_title !important;
+        }
+        ul{
+            font-size: $size_header_subtitle !important;
+        }
+    }
+    h1{
+        font-size: $grosseur_h1 !important;
+    }
+    h2, .post-title{
+        font-size: $grosseur_h2 !important;
+    }
+    h3{
+        font-size: $grosseur_h3 !important;
+    }
+    h4{
+        font-size: $grosseur_h4 !important;
+    }
+    h5{
+        font-size: $grosseur_h5 !important;
+    }
+    h6{
+        font-size: $grosseur_h6 !important;
+    }
+    p{
+        font-size: $grosseur_texte !important;
+    }
+
+    aside.left-side{
+        div.social-links{
+            ul{
+                position: absolute;
+                bottom: 20px;
+                width: $header_left_side_width;
+                li{
+                    i{
+                        font-size: 20px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+
+    nav.navbar{
+        background-color: rgba(0,0,0,0.2);
+        backdrop-filter: blur($blur_menu);
+        transition: 1s backdrop-filter linear;
+        position: fixed;
+        top: 0;
+        z-index: 800;
+        width: 100%;
+        div.all-cases-link{
+            display: none;
+        }
+        div.logo{
+            position: fixed;
+            left: $header_left_side_width / 2 - $header_left_logo_width / 2;
+            img{
+                width: $header_left_logo_width;
+                height: auto;
+            }
+        }
+    }
+
+    header.page-header{
+        ul{
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link, a:visited, a:hover, a:active{
+            color: $light_link_color
+        }
+
+    }
+    
+    main.tourog-page{
+
+        section.error-404{
+            height: 100vh !important;
+            margin-bottom: 0px;
+            display:flex;
+            height: 100%;
+            align-items:center;
+            img{
+                filter: invert(100%);
+            }
+        }
+
+        div.vc_video-bg-container{
+            background-color: $header_video_bg_color;
+            div.vc_video-bg{
+                opacity: $header_video_opacity;
+            }
+        }
+        a.post-title{
+            margin-bottom: 10px !important;
+            text-decoration: none;
+        }
+        
+        .light{
+            color: $light_text_color;
+            a:link, a:visited, a:hover, a:active{
+                color: $light_link_color;
+            }
+        }
+
+        div.container{
+            div.vc_row{
+                div.post:nth-child(odd){
+                    div.post-content{
+                        display: flex;
+                        div.archive_thumb{
+                            order: 2;
+                        }
+                    }
+                }
+            }
+            div.breadcrumbs{
+                padding-top: $padding_elements;
+                margin-bottom: -$padding_container / 2;
+            }
+            div.section-title{
+                padding-bottom: $padding_elements;
+            }
+            div.vc_row:last-child{
+                padding-bottom: $padding_container;
+            }
+            div.vc_row:first-child{
+                padding-top: $padding_container;
+            }
+            table{
+                border-left: none;
+                border-right: none;
+                tr{
+                    th, td{
+                        border-color: rgba(255,255,255,0.4);
+                        border-left: none;
+                        border-right: none;
+                    }
+                }
+            }
+            div.embed-container{
+                position: relative; 
+                padding-bottom: 56.25%;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+                iframe, object, embed{
+                    padding-bottom: $padding_elements;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            div.customGallery{
+                padding-top: $padding_elements;
+                padding-bottom: $padding_elements;
+                div{
+                    height: 200px;
+                    overflow: hidden;
+                    img{
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+            }
+        }
+    }
+
+    footer.footer{
+        div.footer-bottom{
+            border-top: none;
+        }
+    }
+}

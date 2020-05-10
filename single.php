@@ -21,14 +21,11 @@ if(has_post_thumbnail() === false){
 get_header(''); 
 ?>
 
-<?php 
-    while (have_posts()): the_post();
-?>
-
 <?php include_once('components/header_banner.php') ?>
 
-<section class="blog blog-index">
+<main class="tourog-page">
     <?php include_once('components/breadcrumb_area.php') ?>
+
     <?php
         switch(get_post_type(get_the_ID())){
             case 'audio':
@@ -45,8 +42,7 @@ get_header('');
                 break;
         }
     ?>
-</section>
-<?php endwhile; ?>
+</main>
 
 <?php
     get_footer();
