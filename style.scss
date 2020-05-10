@@ -260,3 +260,11 @@ body{
         }
     }
 }
+
+@media (min-width: 2500px){
+    .container {
+        max-width: 2000px !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+}
