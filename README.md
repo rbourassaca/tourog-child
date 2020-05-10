@@ -1,2 +1,3 @@
 # tourog-child
-This is the tourog-child theme for rbourassa.ca.
+
+This is a child theme for [Tourog](https://themeforest.net/item/tourog-creative-agency-wordpress-theme/24157612).
