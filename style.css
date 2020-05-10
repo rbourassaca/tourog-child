@@ -217,6 +217,9 @@ body footer.footer div.footer-bottom {
 body footer.footer div.wpcf7 {
   background: none;
   box-shadow: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 body footer.footer div.wpcf7 input.wpcf7-submit {

@@ -48,7 +48,6 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-
 body{
     cursor: none;
     a:link, a:visited, a:hover, a:active, input, textarea{
@@ -248,6 +247,9 @@ body{
         div.wpcf7{
             background: none;
             box-shadow: none;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
             input.wpcf7-submit{
                 background-color: #161619;
             }
