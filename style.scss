@@ -241,8 +241,22 @@ body{
     }
 
     footer.footer{
+        background-image: none;
         div.footer-bottom{
             border-top: none;
+        }
+        div.wpcf7{
+            background: none;
+            box-shadow: none;
+            input.wpcf7-submit{
+                background-color: #161619;
+            }
+            label{
+                cursor: none;
+            }
+            textarea{
+                resize: none;
+            }
         }
     }
 }

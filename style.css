@@ -206,6 +206,27 @@ body main.tourog-page div.container div.customGallery div img {
   object-position: center center;
 }
 
+body footer.footer {
+  background-image: none;
+}
+
 body footer.footer div.footer-bottom {
   border-top: none;
+}
+
+body footer.footer div.wpcf7 {
+  background: none;
+  box-shadow: none;
+}
+
+body footer.footer div.wpcf7 input.wpcf7-submit {
+  background-color: #161619;
+}
+
+body footer.footer div.wpcf7 label {
+  cursor: none;
+}
+
+body footer.footer div.wpcf7 textarea {
+  resize: none;
 }
