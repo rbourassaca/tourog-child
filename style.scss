@@ -5,7 +5,7 @@ Description:
 Author: rbourassa
 Author URI: http://rbourassa.ca
 Template: tourog
-Version: 2.0.1
+Version: 2.0.0
 Text Domain:  tourog-child
 */
 
@@ -18,7 +18,6 @@ $padding_elements: 50px;
 $header_video_opacity: 0.3;
 
 // Couleurs
-$color_main: #03A9F4;
 $header_video_bg_color: black;
 $light_text_color: white;
 $light_link_color: white;
@@ -50,17 +49,9 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 body{
-
-    div.preloader, div.page-transition{
-        background: $color_main;
-    }
     cursor: none;
     a:link, a:visited, a:hover, a:active, input, textarea{
         cursor: none !important;
-    }
-
-    a:hover{
-        color: $color_main !important;
     }
     
     div.cursor, div.js-cursor{
