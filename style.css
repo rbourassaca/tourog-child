@@ -5,7 +5,7 @@ Description:
 Author: rbourassa
 Author URI: http://rbourassa.ca
 Template: tourog
-Version: 2.0.0
+Version: 2.0.1
 Text Domain:  tourog-child
 */
 body {
@@ -13,8 +13,16 @@ body {
   overflow-x: hidden !important;
 }
 
+body div.preloader, body div.page-transition {
+  background: #03A9F4;
+}
+
 body a:link, body a:visited, body a:hover, body a:active, body input, body textarea {
   cursor: none !important;
+}
+
+body a:hover {
+  color: #03A9F4 !important;
 }
 
 body div.cursor, body div.js-cursor {
