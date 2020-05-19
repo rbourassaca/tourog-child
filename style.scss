@@ -53,10 +53,20 @@ body{
     div.preloader, div.page-transition{
         background: $color_main;
     }
+
     cursor: none;
+
     a:link, a:visited, a:hover, a:active, input, textarea{
         cursor: none !important;
     }
+
+    div#wpadminbar{
+        cursor: default;
+        ul, li, a:link, a:visited, a:hover, a:active, form, input{
+            cursor: default !important;
+        }
+    }
+
     a:hover{
         color: $color_main !important;
     }

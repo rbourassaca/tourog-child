@@ -21,6 +21,14 @@ body a:link, body a:visited, body a:hover, body a:active, body input, body texta
   cursor: none !important;
 }
 
+body div#wpadminbar {
+  cursor: default;
+}
+
+body div#wpadminbar ul, body div#wpadminbar li, body div#wpadminbar a:link, body div#wpadminbar a:visited, body div#wpadminbar a:hover, body div#wpadminbar a:active, body div#wpadminbar form, body div#wpadminbar input {
+  cursor: default !important;
+}
+
 body a:hover {
   color: #03A9F4 !important;
 }
