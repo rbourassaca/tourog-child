@@ -22,6 +22,7 @@ $color_main: #03A9F4;
 $header_video_bg_color: black;
 $light_text_color: white;
 $light_link_color: white;
+$body_bg: #222327;
 
 // Effets
 $blur_menu: 100px;
@@ -50,6 +51,8 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 body{
+    background-color: $body_bg;
+    
     div.preloader, div.page-transition{
         background: $color_main;
     }

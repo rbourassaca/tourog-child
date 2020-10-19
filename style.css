@@ -9,6 +9,7 @@ Version: 2.0.1
 Text Domain:  tourog-child
 */
 body {
+  background-color: #222327;
   cursor: none;
   overflow-x: hidden !important;
 }
